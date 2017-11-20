@@ -1,0 +1,92 @@
+.unslider {
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.unslider-wrap {
+    position: relative
+}
+
+.unslider-wrap.unslider-carousel>li {
+    float: left
+}
+
+.unslider-vertical>ul {
+    height: 100%;
+}
+
+.unslider-vertical li {
+    float: none;
+    width: 100%
+}
+
+.unslider-fade {
+    position: relative
+}
+
+.unslider-fade .unslider-wrap li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 8
+}
+
+.unslider-fade .unslider-wrap li.unslider-active {
+    z-index: 10
+}
+
+.unslider li,
+.unslider ol,
+.unslider ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .unslider li,
+    .unslider ol,
+    .unslider ul {
+        margin: 0;
+    }
+}
+
+
+/* DOTS */
+
+.unslider-nav {
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.unslider-nav ol {
+    list-style: none;
+    text-align: center;
+}
+
+.unslider-nav ol li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background: rgba(255, 255, 255, .33);
+    border-radius: 5px;
+    overflow: hidden;
+    text-indent: -999em;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: .2s ease all;
+}
+
+.unslider-nav ol li.unslider-active {
+    background: #eee;
+    border-color: #eee;
+    cursor: default;
+}
